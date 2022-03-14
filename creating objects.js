@@ -17,8 +17,9 @@ var person = {
 // var user_input = prompt("Enter your choice");
 // // if we are taking input from user, we cannot use dot notation to access
 // person[user_input]
-// creating object with this keyword
 
+// creating object with this keyword
+// constructor
 function Person(name, group, age){
     this.name = name;
     this.group = group;
@@ -27,7 +28,7 @@ function Person(name, group, age){
         console.log(name + " " + age + " years old");
     }
 }
-// creating object
+// initializing objects
 var win = new Person('win', 'software Engineer', 22);
 // creating complex object
 var alien = {
