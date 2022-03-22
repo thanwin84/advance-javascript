@@ -44,3 +44,12 @@ loginUser('win@gmail.com', 123)
     console.log(videos);
     return titleOfTheVideo(videos);
 }).then(title=> console.log(title))
+
+/ another way of writing promises
+async function displayUser(){
+    const loggedInUser = await loginUser("ed@mail.com", 1234);
+    const vidoes = await getVideos(loggedInUser);
+    const title = await titleOfTheVideo(vidoes);
+    console.log(loggedInUser, vidoes, title);
+}
+displayUser();
