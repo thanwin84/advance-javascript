@@ -1,4 +1,14 @@
 
+var Book1 = {
+    name: "History of Long Life",
+    author: "Hakushi Jak",
+    released: 2009,
+}
+// it will give array of keys
+Object.keys(Book1);
+// it will give array of values
+Object.values(Book1);
+
 var person = {
     name: "than win",
     age: 21,
