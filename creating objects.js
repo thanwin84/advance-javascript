@@ -53,3 +53,11 @@ var alien = {
 
 // checking existance 
 //alien.laptop.price === undefined;
+"use strict";
+const person = {
+    name: "than win",
+    age: 21
+}
+// copying onject
+const win = Object.assign({}, person)
+console.log(win)
