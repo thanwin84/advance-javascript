@@ -31,3 +31,15 @@ async function displayUser(){
 }
 displayUser()
 
+// we can handle error by using try and catch
+async function display(){
+    try {
+        const loggedUser = await loginUser('win', 'win@gmail.com');
+        const vid = await userVideos(loggedUser.userEmail);
+        const title = await videoDetail(vid);
+        console.log(title)
+    }
+    catch {
+        console.log("En error has occured")
+    }
+}
