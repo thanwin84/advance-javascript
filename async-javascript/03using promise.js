@@ -38,6 +38,6 @@ const facebook = new Promise((resolve, reject)=>{
         resolve("videos from Facebook")
     }, 4000)
 })
-// running at the same time
+// getting data from both at the same time
 Promise.all([youtube, facebook])
 .then(result=> console.log(result))
